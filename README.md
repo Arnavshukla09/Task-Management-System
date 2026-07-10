@@ -10,6 +10,9 @@ A modern, responsive Task Management System built with **Next.js**, **SQLite**, 
 - **Real-Time Status Tracking**: Managers can toggle task status (Pending / Completed) with immediate database synchronization via Next.js Server Actions.
 - **Premium UI/UX**: Designed using pure CSS, featuring glassmorphism, vibrant gradients, and micro-animations for a highly polished experience.
 
+## Live Demo
+🚀 **[View the deployed application here](https://task-management-system-kappa-orcin.vercel.app/)**
+
 ## Tech Stack
 
 - **Frontend**: Next.js (App Router), React, Vanilla CSS
