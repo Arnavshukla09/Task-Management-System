@@ -10,7 +10,8 @@ export async function login(formData) {
   // Hardcoded credentials for Admin/Manager
   if (username === 'admin' && password === 'password123') {
     // Set cookie
-    cookies().set('auth_token', 'manager-authenticated', {
+    const cookieStore = await cookies();
+    cookieStore.set('auth_token', 'manager-authenticated', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       maxAge: 60 * 60 * 24 * 7, // 1 week
@@ -24,6 +25,7 @@ export async function login(formData) {
 }
 
 export async function logout() {
-  cookies().delete('auth_token');
+  const cookieStore = await cookies();
+  cookieStore.delete('auth_token');
   redirect('/login');
 }
