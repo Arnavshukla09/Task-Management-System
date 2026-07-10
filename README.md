@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Management System
+
+A modern, responsive Task Management System built with **Next.js**, **SQLite**, and **Vanilla CSS**. This application features a Manager-Employee workflow where a manager can assign predefined tasks to employees and track their completion status in real-time.
+
+## Features
+
+- **Secure Manager Dashboard**: Hardcoded secure login system using Next.js Proxy/Middleware to protect routes.
+- **Relational Database**: Powered by SQLite (`better-sqlite3`), featuring relational `Task_Titles` and `Task_Management` tables.
+- **Dynamic Task Assignment**: Assign tasks to employees using a dropdown menu populated directly from the database.
+- **Real-Time Status Tracking**: Managers can toggle task status (Pending / Completed) with immediate database synchronization via Next.js Server Actions.
+- **Premium UI/UX**: Designed using pure CSS, featuring glassmorphism, vibrant gradients, and micro-animations for a highly polished experience.
+
+## Tech Stack
+
+- **Frontend**: Next.js (App Router), React, Vanilla CSS
+- **Backend**: Next.js Server Actions, Next.js Proxy
+- **Database**: SQLite (`better-sqlite3`)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Arnavshukla09/Task-Management-System.git
+   cd Task-Management-System
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+### Authentication
+To access the Manager Dashboard, use the following default credentials:
+- **Username**: `admin`
+- **Password**: `password123`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Submission Details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Author**: Arnav Shukla
+- **Registration Number**: 23BCE10173
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Developed for academic evaluation / project submission.*
