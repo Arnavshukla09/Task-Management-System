@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export function middleware(request) {
+export function proxy(request) {
   const token = request.cookies.get('auth_token')?.value;
 
   // If there's no token and the user is trying to access the dashboard
